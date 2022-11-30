@@ -1,0 +1,84 @@
+body{
+    
+    font-family:'Kanit', sans-serif;
+    font-size: 22px;
+    background-color: lightcoral;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+ 
+    overflow: hidden;
+    
+  }
+  
+  li {
+    float: left;
+    margin: 8px;
+    text-align: center;
+
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    font-size: 23px ;
+    color:red;
+  }
+  .navbar{
+    margin: auto;
+    width: 60%;
+  }
+  .nav{
+    display: flex;
+    flex: space-;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    
+  }
+  .head{
+    display: flex;
+
+  }
+  .logoimg{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding-left: 30px;
+    font-weight: 20;
+
+  }
+  .button{
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    
+  }
+.top{
+  padding: 0;
+}
+.greet{
+
+  text-align: center;
+  justify-content: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: lighter;
+
+}
