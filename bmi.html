@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="grid-container">
+            <div class="grid-item item1">
+                <nav>
+                    <h2 class="logo">Soul<span class="fit">Fit</span></h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="bmi.html">BMI Calculator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <a href="login.html" class="btn">Join Us</a>
+                </nav>
+            </div>
+            <div class="grid-item item1">
+                <h2 class="abt" style="margin-top:40px;" id="bmir">BMI Calculator</h2>
+                <h2 class="greet" id="jsvar"></h2>
+                <p class="para">Body Mass Index (BMI) is a person’s weight in kilograms (or pounds) divided by the
+                    square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for
+                    weight categories that may lead to health problems, but it does not diagnose the body fatness or
+                    health of an individual.</p>
+                <p class="para">This calculator provides body mass index (BMI) and the corresponding BMI weight status
+                    category for adults 18 years and older</p>
+                <div class="bmi">
+                    <form>
+                        <label for="height">Enter Height in cm (centimeters) &nbsp;  &nbsp;</label>
+                        <input type="number" class="bmip" id="height" value="170" style="background-color:transparent;" required> <br>
+                        <label for="weight">Enter Your Weight in Kg(Kilograms)</label>
+
+                        <input type="number" id="weight" value="65" style="background-color: transparent;" required> <br>
+                        <button type="button" class="btn btn1" onclick="myFunction()">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <script>
+                function myFunction(){
+                    h=document.getElementById("height").value;
+                    w=document.getElementById("weight").value;
+                    h = h*0.01;
+                    bmi = w/(h*h);
+                    bmi=bmi.toFixed(4);
+                    document.getElementById("jsvar").innerHTML="Your Body Mass Index is  :  "+ bmi;
+                    
+
+                }
+            </script>
+</body>
+
+</html>
